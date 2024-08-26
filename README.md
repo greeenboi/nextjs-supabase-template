@@ -8,12 +8,12 @@ First, get this project by installing it:
 
 -   npm:
     ```bash
-    npx create-next-app --example [Github Repository Link] <YOUR_APP_NAME>
+    npx create-next-app --example https://github.com/greeenboi/nextjs-supabase-template <YOUR_APP_NAME>
     ```
 -   pnpm:
 
     ```bash
-    pnpm dlx create-next-app --example [Github Repository Link] <YOUR_APP_NAME>
+    pnpm dlx create-next-app --example https://github.com/greeenboi/nextjs-supabase-template <YOUR_APP_NAME>
 
     ```
 
@@ -70,6 +70,4 @@ And Husky will run the `pre-commit` script before committing the code.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-```
-
-```
+> made with 💖 by [greeenboi](https://github.com/greeenboi)
