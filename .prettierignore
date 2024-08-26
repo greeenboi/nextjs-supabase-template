@@ -1,0 +1,7 @@
+.node_modules
+dist
+tailwind.config.ts
+tsconfig.json
+.env
+.env.local
+.gitignore
