@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NextJs 14 + Supabase SWR Starter Template
+
+This is a starter template for Next.js 14 and Supabase with SWR.
 
 ## Getting Started
 
-First, run the development server:
+First, get this project by installing it:
+
+-   npm:
+    ```bash
+    npx create-next-app --example [Github Repository Link] <YOUR_APP_NAME>
+    ```
+-   pnpm:
+
+    ```bash
+    pnpm dlx create-next-app --example [Github Repository Link] <YOUR_APP_NAME>
+
+    ```
+
+## Environment Variables
+
+Create a `.env.local` file in the root of the project and add the following environment variables:
+
+```text
+NEXT_PUBLIC_SUPABASE_URL=https://<your_supabase_url>.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=<your_supabase_anon_key>
+```
+
+## Running the Development Server
 
 ```bash
 npm run dev
 # or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm run dev
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The repository includes the following features:
 
-## Learn More
+-   Supabase authentication ( [SWR](https://supabase.com/docs/guides/auth/server-side/nextjs) )
+-   [Shadcn UI](https://supabase.com/docs/guides/auth/server-side/nextjs) for styling ( sonner has been setup too )
+-   [SWR](https://swr.vercel.app/) for data fetching
+-   [prettier](https://prettier.io/) for code formatting
+-   [eslint](https://eslint.org/) for code linting
+-   [husky](https://typicode.github.io/husky/#/) for pre-commit hooks ( goto #husky for more info )
+-   [react-transition-progress](https://github.com/vercel/react-transition-progress) for page transition loader
 
-To learn more about Next.js, take a look at the following resources:
+## Husky
 
--   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
--   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Husky is a tool that can prevent bad `git commit`, `git push`, and more. It can be used to run scripts (like linting, tests, etc.) before committing or pushing code.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This repository uses Husky to run `eslint` and `prettier` before committing code. If there are any errors, Husky will prevent the commit.
 
-## Deploy on Vercel
+To Use Husky:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+    git add -A
+    git commit -m "Your commit message"
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+And Husky will run the `pre-commit` script before committing the code.
+
+> To disable husky, remove the `lint-staged` field from the `package.json` file and delete the `.husky` folder.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+```
+
+```
