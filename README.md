@@ -6,14 +6,8 @@ This is a starter template for Next.js 14 and Supabase with SWR.
 
 First, get this project by installing it:
 
--   npm:
     ```bash
-    npx create-next-app --example https://github.com/greeenboi/nextjs-supabase-template <YOUR_APP_NAME>
-    ```
--   pnpm:
-
-    ```bash
-    pnpm dlx create-next-app --example https://github.com/greeenboi/nextjs-supabase-template <YOUR_APP_NAME>
+    npx degit greeenboi/nextjs-supabase-template <APP_NAME>
 
     ```
 
